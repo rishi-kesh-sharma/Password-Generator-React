@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(7, 151, 7);
+  padding: 2rem;
+  gap: 1.5rem;
+}
+.title {
+  text-transform: uppercase;
+  color: rgb(232, 232, 232);
+  font-size: 2rem;
+}
+.password-display {
+  font-size: 1.3rem;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  padding: 0.5rem 0.8rem;
+}
+
+.password {
+  padding-right: 2rem;
+  min-width: 10rem;
+  min-height: 2rem;
+}
+.copy-icons {
+  position: absolute;
+  right: 0.5rem;
+  font-size: 2rem;
+  top: 0.3rem;
+  cursor: pointer;
+}
+
+.specifications {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.specifications label {
+  color: rgb(215, 210, 210);
+  margin-right: 2rem;
+}
+
+.specifications input {
+  margin-left: 1rem;
+  min-width: 5rem;
+  height: 1.3rem;
+}
+.specifications input#length {
+  font-size: 1rem;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  width: 100px;
+}
+
+.generate-btn {
+  /*height: 2rem;
+  */
+  width: 100%;
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+  padding: 0.5rem 0;
+  font-size: 1.4rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+
+.generate-btn:hover {
+  background-color: transparent;
+}
